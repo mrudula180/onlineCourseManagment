@@ -1,0 +1,7 @@
+<div class="side-bar">
+    <ul>
+        @for (routes of routingLinks(); track $index) {
+            <li [routerLink]="routes.route" routerLinkActive="active">{{routes.lable}}</li>
+        }
+    </ul>
+</div>

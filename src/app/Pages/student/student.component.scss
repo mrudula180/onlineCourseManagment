@@ -1,0 +1,10 @@
+.student-page{
+    min-height: 100dvh;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+
+    .header{
+        grid-column: 1 / 3;
+    }
+
+}

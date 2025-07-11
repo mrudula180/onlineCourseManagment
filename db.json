@@ -1,0 +1,224 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Alice Admin",
+      "email": "alice@admin.com",
+      "password": "admin123",
+      "role": "admin",
+      "courses": []
+    },
+    {
+      "id": "2",
+      "name": "Bob Instructor",
+      "email": "bob@instructor.com",
+      "password": "instr123",
+      "role": "instructor",
+      "courses": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Charlie Student",
+      "email": "charlie@student.com",
+      "password": "stud123",
+      "role": "student",
+      "courses": [
+        1
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Mrunal",
+      "email": "mrunal@gmail.com",
+      "password": "mrunal123",
+      "role": "instructor",
+      "courses": []
+    },
+    {
+      "id": "5",
+      "name": "Mrudula",
+      "email": "mrudula.khedkar@coditas.com",
+      "password": "mrudula123",
+      "role": "student",
+      "courses": []
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "title": "Angular Basics",
+      "description": "Introduction to Angular framework including components, templates, and routing.",
+      "instructorId": 2,
+      "modules": [
+        "Intro",
+        "Components",
+        "Routing"
+      ],
+      "image": "https://via.placeholder.com/300x180?text=Angular+Basics"
+    },
+    {
+      "id": "2",
+      "title": "Advanced Angular",
+      "description": "Covers advanced Angular topics like RxJS, NgRx state management, and performance optimization.",
+      "instructorId": 2,
+      "modules": [
+        "RxJS",
+        "NgRx",
+        "Lazy Loading"
+      ],
+      "image": "https://via.placeholder.com/300x180?text=Advanced+Angular"
+    },
+    {
+      "id": "3",
+      "title": "TypeScript Essentials",
+      "description": "Master TypeScript fundamentals including types, interfaces, generics, and decorators.",
+      "instructorId": 4,
+      "modules": [
+        "Types",
+        "Interfaces",
+        "Generics"
+      ],
+      "image": "https://via.placeholder.com/300x180?text=TypeScript+Essentials"
+    },
+    {
+      "id": "4",
+      "title": "JavaScript Deep Dive",
+      "description": "Explore JavaScript in depth covering scopes, closures, hoisting, and asynchronous patterns.",
+      "instructorId": 4,
+      "modules": [
+        "Scope",
+        "Closures",
+        "Event Loop"
+      ],
+      "image": "https://via.placeholder.com/300x180?text=JavaScript+Deep+Dive"
+    },
+    {
+      "id": "5",
+      "title": "Web Development Bootcamp",
+      "description": "Comprehensive course on web development from HTML to final project deployment.",
+      "instructorId": 5,
+      "modules": [
+        "HTML",
+        "CSS",
+        "JS",
+        "Projects"
+      ],
+      "image": "https://via.placeholder.com/300x180?text=Web+Dev+Bootcamp"
+    },
+    {
+      "id": "6",
+      "title": "Node.js with Express",
+      "description": "Learn backend development using Node.js and Express to build RESTful APIs.",
+      "instructorId": 6,
+      "modules": [
+        "Express Basics",
+        "Middleware",
+        "REST API"
+      ],
+      "image": "https://via.placeholder.com/300x180?text=Node+with+Express"
+    },
+    {
+      "id": "7",
+      "title": "Database Fundamentals",
+      "description": "Understand relational databases with SQL, joins, normalization, and database design.",
+      "instructorId": 6,
+      "modules": [
+        "SQL",
+        "Joins",
+        "Normalization"
+      ],
+      "image": "https://via.placeholder.com/300x180?text=Database+Fundamentals"
+    },
+    {
+      "id": "8",
+      "title": "MongoDB Crash Course",
+      "description": "Quick start guide to MongoDB covering document structure, aggregation, and indexing.",
+      "instructorId": 7,
+      "modules": [
+        "Documents",
+        "Aggregation",
+        "Indexes"
+      ],
+      "image": "https://via.placeholder.com/300x180?text=MongoDB+Course"
+    },
+    {
+      "id": "9",
+      "title": "React for Beginners",
+      "description": "Get started with React fundamentals including JSX, state, props, and hooks.",
+      "instructorId": 5,
+      "modules": [
+        "JSX",
+        "Hooks",
+        "Routing"
+      ],
+      "image": "https://via.placeholder.com/300x180?text=React+Beginners"
+    },
+    {
+      "id": "10",
+      "title": "DevOps and Deployment",
+      "description": "Hands-on course on CI/CD pipelines, Docker, Kubernetes, and cloud deployment.",
+      "instructorId": 8,
+      "modules": [
+        "CI/CD",
+        "Docker",
+        "Kubernetes"
+      ],
+      "image": "https://via.placeholder.com/300x180?text=DevOps+Deployment"
+    }
+  ],
+  "enrollments": [
+    {
+      "id": "1",
+      "studentId": 3,
+      "courseId": 1
+    }
+  ],
+  "assignments": [
+    {
+      "id": "1",
+      "courseId": 1,
+      "title": "Build a To-Do App",
+      "file": "todo.pdf"
+    }
+  ],
+  "submissions": [
+    {
+      "id": "1",
+      "assignmentId": 1,
+      "studentId": 3,
+      "status": "submitted",
+      "file": "todo-submission.pdf"
+    }
+  ],
+  "allusers": [
+    {
+      "id": "1",
+      "name": "Alice Admin",
+      "email": "alice@admin.com",
+      "role": "admin",
+      "courses": []
+    },
+    {
+      "id": "2",
+      "name": "Bob Instructor",
+      "email": "bob@instructor.com",
+      "role": "instructor",
+      "courses": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Charlie Student",
+      "email": "charlie@student.com",
+      "role": "student",
+      "courses": [
+        1
+      ]
+    }
+  ]
+}

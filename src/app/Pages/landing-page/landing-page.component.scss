@@ -1,0 +1,114 @@
+@use './../../../themes/base/' as b;
+
+.header {
+    @include b.flex-row-center-space-between();
+    padding: .5rem 1rem;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    .nav-tabs {
+        ul {
+            @include b.flex-row-center-space-between(2rem);
+
+            li {
+                list-style: none;
+                cursor: pointer;
+
+                &:hover {
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+
+    .get-into-app-btns {
+        @include b.flex-row-center-space-between(.5rem);
+    }
+}
+
+.section {
+    min-height: 80dvh;
+    width: 100%;
+    padding: 2rem;
+}
+
+// home-section
+.home-section {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+
+    .left-section {
+        min-height: 100%;
+        text-align: left;
+        @include b.flex-col-start-center(.1rem);
+
+        .home-page-btns-container {
+            @include b.flex-row-center-space-between(.5rem);
+        }
+    }
+
+    .right-section {
+        @include b.center-item();
+
+        .img-container {
+            img {
+                width: 600px;
+                height: 500px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .footer-ranks {
+        grid-column: 1 / 3;
+        background-color: #7c04fc;
+        color: white;
+
+        .application-stats {
+            padding: 1rem 0rem;
+            @include b.flex-row-center-center();
+
+            .stats {
+                padding: .5rem 2rem;
+                text-align: center;
+                border-right: thin solid white;
+
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+    }
+}
+
+// recommendation section
+.recommendation-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+    .left-section {
+        grid-column: 1 / 3;
+        text-align: left;
+         @include b.flex-col-start-center();
+    }
+
+    .cards {
+        box-shadow: 0px 0px 6px 0px #ccc;
+        text-align: left;
+        padding: 1rem;
+        border-radius: 8px;
+        transition: all ease-in-out .5s;
+        svg {
+            width: 50px;
+            height: 50px;
+        }
+        &:hover{
+            transform: scale(1.1,1.1);
+        }
+    }
+}
